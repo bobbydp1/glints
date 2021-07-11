@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <img class="logo" src="./asset/img/logo.png">
+        </div>
+        <!-- Tambahkan ikon menu disini -->
+        <span class="fa fa-bars menu-icon"></span>
+        <div class="header-right">
+          <p class="dark-light"><img src="./asset/img/sun.png"id="tombol"></p>
+          <a href="#">Pelajaran</a>
+          <a href="#">Daftar</a>
+          <a href="#" class="login">Log in</a>
+        </div>
+      </div>
+    </header>
+     <div class="top-wrapper">
+      <div class="container">
+        <h1>WELCOME</h1>
+        <h1>TO My Portofolio</h1>
+        <p>MY MOTIVATION</p>
+        <p>MENJADI LEBIH BAIK MENUJU CARRER TERBAIK</p>
+        <div class="btn-wrapper">
+          <a href="#" class="btn signup">HUBUNGI SAYA</a>
+         <!--  <p>atau</p>
+         <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Daftar dengan Facebook</a>
+          <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Daftar dengan Twitter</a>-->
+        </div>
+      </div>
+    </div>
+    <div class="lesson-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Apa yang anda ingin tahu tentang saya?</h2>
+        </div>
+        <div class="lessons">
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img class="baloon" src="./asset/img/baloon.png">
+               <p>Perkenalan</p>
+            </div>
+             <p class="text-contents">Nama saya Bobby, saya tinggal di Bekasi Jawa Barat. </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img class="baloon" src="./asset/img/baloon.png">
+              <p>Pendidikan Terakhir</p>
+            </div>
+            <p class="text-contents">Pendidikan terakhir saya adalah S1 Sistem Informasi</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img class="baloon" src="./asset/img/baloon.png">
+              <p>Riwayat Pekerjaan</p>
+            </div>
+            <p class="text-contents">Saya pernah bekerja di sebuah kampus sebagai administrasi keuangan. Dan juga pernah bekerja di sebuah pabrik manufaktur sebagai operator produksi.</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img class="baloon" src="./asset/img/baloon.png">
+              <p>Hobi</p>
+            </div>
+            <p class="text-contents">Hobi saya kuliner dan terkadang menonton film.</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="message-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>HUBUNGI SAYA</h2>
+        </div>
+        <div class="contact-form">
+          <p>Email (wajib diisi)</p>
+          <input>
+          <p>Pesan (Wajib diisi)</p>
+          <textarea></textarea>
+          <p>* Bidang wajib diisi</p>
+        </div>
+        <span class="btn message">KIRIM</span>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <p>Terima kasih sudah mampir kesini.</p>
+        <p>Contact saya jika perlu sesuatu</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      var icon = document.getElementById("tombol");
+      icon.onclick = function(){
+          document.body.classList.toggle("dark-theme");
+          if( document.body.classList.contains("dark-theme")){
+              icon.src = "./asset/img/moon.png";
+          }else{
+              icon.src = "./asset/img/sun.png";
+          }
+      }
+  </script>
+  </body>
+</html>
